@@ -14,27 +14,29 @@ The "boy scout rule" says that : "It's not enough to write the code well. The co
 
 A clean code is a code where you :
 
-Use meaningful names
-Use convention
-Try not to produce unused code
-Pay attention to structure
-Comments and variable names in your native language
-Use project patterns
-Do not write classes with too many lines of code
-Write unit tests
-Try not to write redundant code.
-Unused Code Rule Complement
-Reuse written code
-Do not use comments to comment out unused code
-Use proper indentation, code formatting etc.
-Do not use magic numbers
-Try to avoid constructing vast methods
-Do not write a few instructions in one line.
+- Use meaningful names
+- Use convention
+- Try not to produce unused code
+- Pay attention to structure
+- Comments and variable names in your native language
+- Use project patterns
+- Do not write classes with too many lines of code
+- Write unit tests
+- Try not to write redundant code.
+- Unused Code Rule Complement
+- Reuse written code
+- Do not use comments to comment out unused code
+- Use proper indentation, code formatting etc.
+- Do not use magic numbers
+- Try to avoid constructing vast methods
+- Do not write a few instructions in one line.
+
 A clean architecture has the characteristics of being :
 
-Independent of any framework / user interface / database
-Testable
-Well organized, i.e. nice for developers
+- Independent of any framework / user interface / database
+- Testable
+- Well organized, i.e. nice for developers
+
 This architecture is broken down into 4 distinct layers: Domain, Application, Infrastructure and Presentation. The rule is simple: only an upper layer can access the lower layer.
 
 How would you expand this code? What can you add to the software you build to make it more useful, reliable, relevant to the user? Find 5 ways to improve your previous TP, even if that’s not doable.
