@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using AppKit;
+using Xamarin.Forms;
 
 namespace TP3
 {
@@ -12,7 +13,11 @@ namespace TP3
         public static async void GetInfo(string city, NSTextField midnight, NSTextField threeAm, NSTextField sixAm, NSTextField nineAm,
             NSTextField midday, NSTextField threePm, NSTextField sixPm, NSTextField ninePm, NSTextField minOne, NSTextField maxOne,
             NSTextField minTwo, NSTextField maxTwo,NSTextField minThree, NSTextField maxThree,NSTextField minFour, NSTextField maxFour,
-            NSTextField minFive, NSTextField maxFive, NSTextField errorCity)
+            NSTextField minFive, NSTextField maxFive, NSTextField errorCity, NSImageView iconWeatherOne, NSImageView iconWeatherTwo,
+            NSImageView iconWeatherThree, NSImageView iconWeatherFour, NSImageView iconWeatherFive, NSImageView iconWeatherSix,
+            NSImageView iconWeatherSeven, NSImageView iconWeatherEight, NSImageView iconWeatherMin1, NSImageView iconWeatherMax1,
+            NSImageView iconWeatherMin2, NSImageView iconWeatherMax2, NSImageView iconWeatherMin3, NSImageView iconWeatherMax3,
+            NSImageView iconWeatherMin4, NSImageView iconWeatherMax4, NSImageView iconWeatherMin5, NSImageView iconWeatherMax5)
         {
             try
             {
@@ -37,6 +42,14 @@ namespace TP3
                     threePm.StringValue = (int)tomorrowWeather.list[i + 5].main.temp + "°";
                     sixPm.StringValue = (int)tomorrowWeather.list[i + 6].main.temp + "°";
                     ninePm.StringValue = (int)tomorrowWeather.list[i + 7].main.temp + "°";
+                    iconWeatherOne.Image = new NSImage($"{tomorrowWeather.list[i].weather[0].icon}.png");
+                    iconWeatherTwo.Image = new NSImage($"{tomorrowWeather.list[i+1].weather[0].icon}.png");
+                    iconWeatherThree.Image = new NSImage($"{tomorrowWeather.list[i+2].weather[0].icon}.png");
+                    iconWeatherFour.Image = new NSImage($"{tomorrowWeather.list[i+3].weather[0].icon}.png");
+                    iconWeatherFive.Image = new NSImage($"{tomorrowWeather.list[i+4].weather[0].icon}.png");
+                    iconWeatherSix.Image = new NSImage($"{tomorrowWeather.list[i+5].weather[0].icon}.png");
+                    iconWeatherSeven.Image = new NSImage($"{tomorrowWeather.list[i+6].weather[0].icon}.png");
+                    iconWeatherEight.Image = new NSImage($"{tomorrowWeather.list[i+7].weather[0].icon}.png");
                     break;
                 }
 
@@ -89,6 +102,52 @@ namespace TP3
                     {
                         minTempFive.Add(t.main.temp_min);
                         maxTempFive.Add(t.main.temp_max);
+                    }
+                }
+
+                for (var j = 0; j < tomorrowWeather.list.Count; j++)
+                {
+                    var date = tomorrowWeather.list[j].dt_txt;
+                    var splitDate = Regex.Split(date, @"\s+");
+                    if ((int)minTempOne.Min() == (int)tomorrowWeather.list[j].main.temp_min & splitDate[0] == splitDate1[0])
+                    {
+                        iconWeatherMin1.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempOne.Max() == (int)tomorrowWeather.list[j].main.temp_max & splitDate[0] == splitDate1[0])
+                    {
+                        iconWeatherMax1.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempTwo.Min() == (int)tomorrowWeather.list[j].main.temp_min & splitDate[0] == splitDate2[0])
+                    {
+                        iconWeatherMin2.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempTwo.Max() == (int)tomorrowWeather.list[j].main.temp_max & splitDate[0] == splitDate2[0])
+                    {
+                        iconWeatherMax2.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempThree.Min() == (int)tomorrowWeather.list[j].main.temp_min & splitDate[0] == splitDate3[0])
+                    {
+                        iconWeatherMin3.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempThree.Max() == (int)tomorrowWeather.list[j].main.temp_max & splitDate[0] == splitDate3[0])
+                    {
+                        iconWeatherMax3.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempFour.Min() == (int)tomorrowWeather.list[j].main.temp_min & splitDate[0] == splitDate4[0])
+                    {
+                        iconWeatherMin4.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempFour.Max() == (int)tomorrowWeather.list[j].main.temp_max & splitDate[0] == splitDate4[0])
+                    {
+                        iconWeatherMax4.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempFive.Min() == (int)tomorrowWeather.list[j].main.temp_min & splitDate[0] == splitDate5[0])
+                    {
+                        iconWeatherMin5.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
+                    }
+                    else if ((int)minTempFive.Max() == (int)tomorrowWeather.list[j].main.temp_max & splitDate[0] == splitDate5[0])
+                    {
+                        iconWeatherMax5.Image = new NSImage($"{tomorrowWeather.list[j].weather[0].icon}.png");
                     }
                 }
                 minOne.StringValue = (int)minTempOne.Min() + "°";
