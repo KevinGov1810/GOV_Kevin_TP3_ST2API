@@ -29,11 +29,14 @@ namespace TP3
             
             // Information for the actual weather
             ActualWeather.GetInfo(choiceCity.StringValue, actualTemp, description, pressure, pressureInterpretation,
-                windSpeed, windSpeedInterpretation,sunriseTime, sunsetTime, errorCity);
+                windSpeed, windSpeedInterpretation,sunriseTime, sunsetTime, errorCity, iconWeatherToday);
             
             // Information for the next weather
             NextDayWeather.GetInfo(choiceCity.StringValue, midnight, threeAM, sixAM, nineAM, midday, threePM, sixPM, ninePM,
-                minOne, maxOne, minTwo, maxTwo, minThree, maxThree, minFour, maxFour, minFive, maxFive, errorCity);
+                minOne, maxOne, minTwo, maxTwo, minThree, maxThree, minFour, maxFour, minFive, maxFive, errorCity, iconWeatherOne,
+                iconWeatherTwo, iconWeatherThree, iconWeatherFour, iconWeatherFive, iconWeatherSix, iconWeatherSeven, iconWeatherEight,
+                iconWeatherMin1, iconWeatherMax1, iconWeatherMin2, iconWeatherMax2, iconWeatherMin3, iconWeatherMax3, iconWeatherMin4, 
+                iconWeatherMax4, iconWeatherMin5, iconWeatherMax5);
             
             // Information for the air pollution
             AirPollutionWeather.GetInfo(choiceCity.StringValue, airCriteria, airCriteriaInterpretation, errorCity);

@@ -53,7 +53,61 @@ namespace TP3
 		AppKit.NSImageView iconOne { get; set; }
 
 		[Outlet]
+		AppKit.NSImageView iconWeatherEight { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherFive { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherFour { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMax1 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMax2 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMax3 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMax4 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMax5 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMin1 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMin2 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMin3 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMin4 { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherMin5 { get; set; }
+
+		[Outlet]
 		AppKit.NSImageView iconWeatherOne { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherSeven { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherSix { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherThree { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherToday { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView iconWeatherTwo { get; set; }
 
 		[Outlet]
 		AppKit.NSTextField maxFive { get; set; }
@@ -152,24 +206,9 @@ namespace TP3
 				choiceCity = null;
 			}
 
-			if (dateTomorrow != null) {
-				dateTomorrow.Dispose ();
-				dateTomorrow = null;
-			}
-
-			if (dateOne != null) {
-				dateOne.Dispose ();
-				dateOne = null;
-			}
-
-			if (dateTwo != null) {
-				dateTwo.Dispose ();
-				dateTwo = null;
-			}
-
-			if (dateThree != null) {
-				dateThree.Dispose ();
-				dateThree = null;
+			if (dateFive != null) {
+				dateFive.Dispose ();
+				dateFive = null;
 			}
 
 			if (dateFour != null) {
@@ -177,9 +216,24 @@ namespace TP3
 				dateFour = null;
 			}
 
-			if (dateFive != null) {
-				dateFive.Dispose ();
-				dateFive = null;
+			if (dateOne != null) {
+				dateOne.Dispose ();
+				dateOne = null;
+			}
+
+			if (dateThree != null) {
+				dateThree.Dispose ();
+				dateThree = null;
+			}
+
+			if (dateTomorrow != null) {
+				dateTomorrow.Dispose ();
+				dateTomorrow = null;
+			}
+
+			if (dateTwo != null) {
+				dateTwo.Dispose ();
+				dateTwo = null;
 			}
 
 			if (description != null) {
@@ -197,9 +251,124 @@ namespace TP3
 				iconOne = null;
 			}
 
+			if (iconWeatherToday != null) {
+				iconWeatherToday.Dispose ();
+				iconWeatherToday = null;
+			}
+
+			if (iconWeatherEight != null) {
+				iconWeatherEight.Dispose ();
+				iconWeatherEight = null;
+			}
+
+			if (iconWeatherFive != null) {
+				iconWeatherFive.Dispose ();
+				iconWeatherFive = null;
+			}
+
+			if (iconWeatherFour != null) {
+				iconWeatherFour.Dispose ();
+				iconWeatherFour = null;
+			}
+
+			if (iconWeatherMax1 != null) {
+				iconWeatherMax1.Dispose ();
+				iconWeatherMax1 = null;
+			}
+
+			if (iconWeatherMax2 != null) {
+				iconWeatherMax2.Dispose ();
+				iconWeatherMax2 = null;
+			}
+
+			if (iconWeatherMax3 != null) {
+				iconWeatherMax3.Dispose ();
+				iconWeatherMax3 = null;
+			}
+
+			if (iconWeatherMax4 != null) {
+				iconWeatherMax4.Dispose ();
+				iconWeatherMax4 = null;
+			}
+
+			if (iconWeatherMax5 != null) {
+				iconWeatherMax5.Dispose ();
+				iconWeatherMax5 = null;
+			}
+
+			if (iconWeatherMin1 != null) {
+				iconWeatherMin1.Dispose ();
+				iconWeatherMin1 = null;
+			}
+
+			if (iconWeatherMin2 != null) {
+				iconWeatherMin2.Dispose ();
+				iconWeatherMin2 = null;
+			}
+
+			if (iconWeatherMin3 != null) {
+				iconWeatherMin3.Dispose ();
+				iconWeatherMin3 = null;
+			}
+
+			if (iconWeatherMin4 != null) {
+				iconWeatherMin4.Dispose ();
+				iconWeatherMin4 = null;
+			}
+
+			if (iconWeatherMin5 != null) {
+				iconWeatherMin5.Dispose ();
+				iconWeatherMin5 = null;
+			}
+
 			if (iconWeatherOne != null) {
 				iconWeatherOne.Dispose ();
 				iconWeatherOne = null;
+			}
+
+			if (iconWeatherSeven != null) {
+				iconWeatherSeven.Dispose ();
+				iconWeatherSeven = null;
+			}
+
+			if (iconWeatherSix != null) {
+				iconWeatherSix.Dispose ();
+				iconWeatherSix = null;
+			}
+
+			if (iconWeatherThree != null) {
+				iconWeatherThree.Dispose ();
+				iconWeatherThree = null;
+			}
+
+			if (iconWeatherTwo != null) {
+				iconWeatherTwo.Dispose ();
+				iconWeatherTwo = null;
+			}
+
+			if (maxFive != null) {
+				maxFive.Dispose ();
+				maxFive = null;
+			}
+
+			if (maxFour != null) {
+				maxFour.Dispose ();
+				maxFour = null;
+			}
+
+			if (maxOne != null) {
+				maxOne.Dispose ();
+				maxOne = null;
+			}
+
+			if (maxThree != null) {
+				maxThree.Dispose ();
+				maxThree = null;
+			}
+
+			if (maxTwo != null) {
+				maxTwo.Dispose ();
+				maxTwo = null;
 			}
 
 			if (midday != null) {
@@ -212,34 +381,9 @@ namespace TP3
 				midnight = null;
 			}
 
-			if (minOne != null) {
-				minOne.Dispose ();
-				minOne = null;
-			}
-
-			if (maxOne != null) {
-				maxOne.Dispose ();
-				maxOne = null;
-			}
-
-			if (minTwo != null) {
-				minTwo.Dispose ();
-				minTwo = null;
-			}
-
-			if (maxTwo != null) {
-				maxTwo.Dispose ();
-				maxTwo = null;
-			}
-
-			if (minThree != null) {
-				minThree.Dispose ();
-				minThree = null;
-			}
-
-			if (maxThree != null) {
-				maxThree.Dispose ();
-				maxThree = null;
+			if (minFive != null) {
+				minFive.Dispose ();
+				minFive = null;
 			}
 
 			if (minFour != null) {
@@ -247,19 +391,19 @@ namespace TP3
 				minFour = null;
 			}
 
-			if (maxFour != null) {
-				maxFour.Dispose ();
-				maxFour = null;
+			if (minOne != null) {
+				minOne.Dispose ();
+				minOne = null;
 			}
 
-			if (minFive != null) {
-				minFive.Dispose ();
-				minFive = null;
+			if (minThree != null) {
+				minThree.Dispose ();
+				minThree = null;
 			}
 
-			if (maxFive != null) {
-				maxFive.Dispose ();
-				maxFive = null;
+			if (minTwo != null) {
+				minTwo.Dispose ();
+				minTwo = null;
 			}
 
 			if (nineAM != null) {
