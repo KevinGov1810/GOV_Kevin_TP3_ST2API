@@ -10,7 +10,7 @@ namespace TP3
     {
         public static async void GetInfo(string city, NSTextFieldCell actualTemp,  NSTextField description,NSTextField pressure,
             NSTextField pressureInterpretation,NSTextField windSpeed, NSTextField windSpeedInterpretation, 
-            NSTextField sunriseTime, NSTextField sunsetTime, NSTextField errorCity)
+            NSTextField sunriseTime, NSTextField sunsetTime, NSTextField errorCity, NSImageView iconWeatherToday)
         {
             try
             {
@@ -25,6 +25,9 @@ namespace TP3
                 // Weather description
                 description.StringValue = todayWeather.weather[0].description;
                 
+                // Weather Icon for actual weather
+                iconWeatherToday.Image = new NSImage($"{todayWeather.weather[0].icon}.png");
+
                 // Pressure
                 var pressureInt = todayWeather.main.pressure;
                 pressure.StringValue = pressureInt + " hPa";
