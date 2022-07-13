@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kevin/RiderProjects/TP3/Tests/Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/kevin/RiderProjects/TP3/Tests/Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kevin/RiderProjects/TP3/Tests/Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "/Users/kevin/RiderProjects/TP3/Tests/Tests.csproj",
+        "packagesPath": "/Users/kevin/.nuget/packages/",
+        "outputPath": "/Users/kevin/RiderProjects/TP3/Tests/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/kevin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "/Users/kevin/RiderProjects/TP3/TP3/TP3.csproj": {
+                "projectPath": "/Users/kevin/RiderProjects/TP3/TP3/TP3.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[2.6.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.UITest": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/kevin/RiderProjects/TP3/TP3/TP3.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/kevin/RiderProjects/TP3/TP3/TP3.csproj",
+        "projectName": "TP3",
+        "projectPath": "/Users/kevin/RiderProjects/TP3/TP3/TP3.csproj",
+        "frameworks": {
+          "xamarinmac20": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinmac20": {}
+      }
+    }
+  }
+}
