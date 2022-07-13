@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3", "TP3\TP3.csproj", "{D928AAD1-ADA1-41A4-8BEE-83BC2C094FE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{144540F2-3151-4C68-B8A8-96EBB2A7AF89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -14,5 +16,9 @@ Global
 		{D928AAD1-ADA1-41A4-8BEE-83BC2C094FE5}.Release|x86.ActiveCfg = Release|x86
 		{D928AAD1-ADA1-41A4-8BEE-83BC2C094FE5}.Release|x86.Build.0 = Release|x86
 		{D928AAD1-ADA1-41A4-8BEE-83BC2C094FE5}.Release|x86.Deploy.0 = Release|x86
+		{144540F2-3151-4C68-B8A8-96EBB2A7AF89}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{144540F2-3151-4C68-B8A8-96EBB2A7AF89}.Debug|x86.Build.0 = Debug|Any CPU
+		{144540F2-3151-4C68-B8A8-96EBB2A7AF89}.Release|x86.ActiveCfg = Release|Any CPU
+		{144540F2-3151-4C68-B8A8-96EBB2A7AF89}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
