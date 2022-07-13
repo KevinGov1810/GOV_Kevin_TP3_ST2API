@@ -1,0 +1,12 @@
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/Tests.dll
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/Tests.pdb
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/Newtonsoft.Json.dll
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/nunit.framework.dll
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/Xamarin.UITest.dll
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/TP3.exe
+/Users/kevin/RiderProjects/TP3/Tests/bin/Debug/TP3.pdb
+/Users/kevin/RiderProjects/TP3/Tests/obj/Debug/Tests.csproj.AssemblyReference.cache
+/Users/kevin/RiderProjects/TP3/Tests/obj/Debug/Tests.csproj.CoreCompileInputs.cache
+/Users/kevin/RiderProjects/TP3/Tests/obj/Debug/Tests.csproj.CopyComplete
+/Users/kevin/RiderProjects/TP3/Tests/obj/Debug/Tests.dll
+/Users/kevin/RiderProjects/TP3/Tests/obj/Debug/Tests.pdb
